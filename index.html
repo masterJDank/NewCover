@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, minimum-scale=1.00, maximum-scale=2.00">
+    <link rel="stylesheet" href="index.css">
+    <title>INDEXPAGE</title>
+    <style>
+        @font-face {
+            font-family:googleone ;
+            src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+        }
+    </style>
+
+</head>
+<body >
+    <div id="mainwrapper" >
+        <div id="title">
+            <h1 id="text">jeet vishwasrao dank</h1>
+            
+
+        </div>
+        <div id="details">
+           
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio error necessitatibus, laboriosam beatae nostrum magnam temporibus odit nam, placeat dolor? Cum voluptatem vero ipsam.
+        </div>
+       <img  onclick="scrollme()"  id="downimg" src="arrow-alt-circle-down-regular.svg" alt="downwardarrow">
+    </div>
+    <div id="contentwrap" >
+        <div id="navbar">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BOOK</a></li>
+            <li><a href="#">REGISTER</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+ 
+        </div>
+        <div id="header_image" >
+          <a href="https://visitmaldives.com/en" target="_blank"><img onmouseover="show()" src="pexels-asad-photo-maldives-3601421.jpg" alt="" srcset=""></a>
+          <div id="imgdetails">
+           <h2>Weekend at maldives</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quisquam voluptatum praesentium eaque quae ex!</p>
+
+          </div>
+
+        </div>
+        <div style="padding: 20vh;" id="sitecontent">
+            <h1 style="color: royalblue; text-align: center;">SITE CONTENT</h1>
+        </div>
+        <footer id="footerele">
+            <img onclick="takemetocover()" src="arrow-up-solid.svg" alt="" id="arrow-up" title="scroll to the cover">
+            <div id="footercontent">
+               
+                <div id="social">
+                   <a href=""><img src="facebook-square-brands.svg" alt="" class="socialimg"></a> 
+                   <a href=""><img src="instagram-square-brands.svg" alt="" class="socialimg"></a>
+                  <a href=""><img src="linkedin-in-brands.svg" alt="" class="socialimg"></a>
+
+                </div>
+                <div class="content cont2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia soluta velit libero incidunt exercitationem provident eveniet! Reiciendis culpa, nisi quo quam perspiciatis laboriosam ratione omnis dolorum! Repellat, voluptates nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illum sit pariatur reprehenderit qui fugiat saepe libero dolorum ratione corporis.
+
+        
+                </div>
+                <div class="content cont1">
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                    </ul>
+                    <ul>
+                        
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </footer>
+        
+    </div>
+    
+</body>
+<script>
+
+function scrollme(){
+    var imgid = document.getElementById("contentwrap");
+    imgid.scrollIntoView({behavior:"smooth"})
+
+
+}
+function takemetocover(){
+    var imgid = document.getElementById("mainwrapper");
+    imgid.scrollIntoView({behavior:"smooth"})
+
+
+}
+
+function show(){
+    var ele = document.getElementById("imgdetails")
+    ele.style.display="block";
+    var timestp = setTimeout(drop,3000)
+}
+function drop(){
+    var ele = document.getElementById("imgdetails")
+    ele.style.display="none";
+    
+
+    
+}
+
+
+
+
+
+
+</script>
+</html>
